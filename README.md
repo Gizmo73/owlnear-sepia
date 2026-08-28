@@ -57,8 +57,10 @@ in every connected client for as long as the extension is installed, watches
 the shared settings in the scene metadata, and reconciles the local effects to
 match. The popover only ever writes settings.
 
-**Because effects are local, every player who wants to see the sepia tone needs
-the extension installed.** Players without it see the scene untinted.
+Extensions are enabled per room, so once this one is enabled for a room its
+background page loads for everyone in that room and the whole table sees the
+same tint. Effects being local is a rendering detail — it is why the background
+page exists at all — not something players have to do anything about.
 
 ## Development
 
