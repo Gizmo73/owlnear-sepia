@@ -1,0 +1,20 @@
+{
+  "name": "owlnear-sepia",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "An Owlbear Rodeo extension that applies an adjustable sepia filter to the maps in a scene.",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run verify && vite build",
+    "preview": "vite preview",
+    "verify": "node scripts/verify-shaders.mjs"
+  },
+  "dependencies": {
+    "@owlbear-rodeo/sdk": "^3.1.0"
+  },
+  "devDependencies": {
+    "canvaskit-wasm": "^0.42.0",
+    "vite": "^8.2.2"
+  }
+}

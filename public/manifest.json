@@ -1,0 +1,17 @@
+{
+  "name": "Sepia Filter",
+  "version": "1.0.0",
+  "manifest_version": 1,
+  "author": "Gizmo73",
+  "description": "Applies an adjustable sepia tone to every map in the current scene.",
+  "homepage_url": "https://github.com/Gizmo73/owlnear-sepia",
+  "icon": "https://gizmo73.github.io/owlnear-sepia/icon.svg",
+  "background_url": "https://gizmo73.github.io/owlnear-sepia/background.html",
+  "action": {
+    "title": "Sepia Filter",
+    "icon": "https://gizmo73.github.io/owlnear-sepia/icon.svg",
+    "popover": "https://gizmo73.github.io/owlnear-sepia/index.html",
+    "height": 470,
+    "width": 320
+  }
+}

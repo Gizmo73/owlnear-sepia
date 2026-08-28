@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sepia Filter</title>
+    <link rel="icon" href="./icon.svg" />
+  </head>
+  <body>
+    <main id="app">
+      <p class="notice" id="status">Connecting to Owlbear Rodeo…</p>
+
+      <div id="controls" hidden>
+        <label class="row toggle">
+          <span class="label">Sepia filter</span>
+          <input type="checkbox" id="enabled" />
+        </label>
+
+        <div class="field">
+          <div class="row">
+            <label class="label" for="strength">Strength</label>
+            <output class="value" id="strength-value">75%</output>
+          </div>
+          <input type="range" id="strength" min="0" max="100" step="1" />
+          <p class="hint">How much of the map's own colour is replaced by the sepia tone.</p>
+        </div>
+
+        <div class="field">
+          <div class="row">
+            <label class="label" for="tone">Tone</label>
+            <input type="color" id="tone" />
+          </div>
+          <div class="presets" id="presets"></div>
+        </div>
+
+        <div class="field">
+          <div class="row">
+            <label class="label" for="vignette">Vignette</label>
+            <output class="value" id="vignette-value">25%</output>
+          </div>
+          <input type="range" id="vignette" min="0" max="100" step="1" />
+          <p class="hint">Darkens the edges of each map for an aged-photograph look.</p>
+        </div>
+
+        <div class="field">
+          <label class="label" for="blend-mode">Blend</label>
+          <select id="blend-mode"></select>
+        </div>
+
+        <button type="button" id="reset" class="reset">Reset to defaults</button>
+      </div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
